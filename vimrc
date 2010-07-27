@@ -110,6 +110,9 @@ map <Leader>sv :RSview
 map <Leader>su :RSunittest 
 map <Leader>sf :RSfunctionaltest 
 
+" FuzzyFinderTextMate
+map <Leader>t :FuzzyFinderTextMate<Enter>
+
 " Hide search highlighting
 map <Leader>h :set invhls <CR>
 
