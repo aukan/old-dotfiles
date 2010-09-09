@@ -212,3 +212,5 @@ function! OpenURL()
 endfunction
 map <Leader>w :call OpenURL()<CR>
 
+" Change the shorcut to alternate screens
+map <C-M> <C-W>
