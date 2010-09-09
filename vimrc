@@ -156,6 +156,9 @@ imap <C-L> <Space>=><Space>
 
 " Display extra whitespace
 " set list listchars=tab:»·,trail:·
+"display tabs and trailing spaces
+set listchars=tab:▸\ ,eol:¬
+set list
 
 " Edit routes
 command! Rroutes :e config/routes.rb
