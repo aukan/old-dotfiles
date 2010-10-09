@@ -207,3 +207,7 @@ let g:fuf_splitPathMatching=1
 
 map <Leader>o :call OpenURL()<CR>
 
+" Key to go into dvorak mode:
+map <Leader>d :source ~/.dvorak
+" Key to get out of dvorak mode:
+map <Leader>q :source ~/.qwerty
