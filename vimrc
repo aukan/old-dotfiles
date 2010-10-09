@@ -200,6 +200,9 @@ set smartcase
 let g:Tlist_Ctags_Cmd="ctags --exclude='*.js'"
 set tags=./tags;
 
+" Generate ctags
+map <silent> <Leader>c :!/usr/local/bin/ctags -R --exclude=.git --exclude=log --exclude=public/assets *<CR>
+
 let g:fuf_splitPathMatching=1
 
 map <Leader>o :call OpenURL()<CR>
