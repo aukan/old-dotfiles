@@ -4569,8 +4569,13 @@ function! s:BufSettings()
   call self.setvar('&suffixesadd', ".rb,.".s:gsub(s:view_types,',',',.').",.css,.js,.yml,.csv,.rake,.sql,.html,.xml")
   let ft = self.getvar('&filetype')
   if ft =~ '^\%(e\=ruby\|[yh]aml\|javascript\|css\|sass\)$'
-    call self.setvar('&shiftwidth',2)
-    call self.setvar('&softtabstop',2)
+    if ft =~ '^\%(eruby\|javascript\|css\)$'
+      call self.setvar('&shiftwidth',4)
+      call self.setvar('&softtabstop',4)
+    else
+      call self.setvar('&shiftwidth',2)
+      call self.setvar('&softtabstop',2)
+    endif
     call self.setvar('&expandtab',1)
     if exists('+completefunc') && self.getvar('&completefunc') == ''
       call self.setvar('&completefunc','syntaxcomplete#Complete')

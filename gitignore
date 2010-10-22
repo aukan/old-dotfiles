@@ -4,3 +4,6 @@
 .*.swp
 .rvmrc
 tags
+
+# VIM Files
+*.vim
