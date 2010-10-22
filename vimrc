@@ -205,6 +205,7 @@ map <silent> <Leader>c :!/usr/local/bin/ctags -R --exclude=.git --exclude=log --
 
 let g:fuf_splitPathMatching=1
 
+" Shortcut for OpenURL()
 map <Leader>o :call OpenURL()<CR>
 
 " Key to go into dvorak mode:
