@@ -149,9 +149,6 @@ nmap <F1> <Esc>
 " Press ^F from insert mode to insert the current file name
 imap <C-F> <C-R>=expand("%")<CR>
 
-" Maps autocomplete to tab
-imap <Tab> <C-N>
-
 imap <C-L> <Space>=><Space>
 
 " Display extra whitespace
