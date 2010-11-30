@@ -7,3 +7,13 @@ tags
 
 # VIM Files
 *.vim
+
+Gemfile.lock
+
+# Rails
+db/schema.rb
+db/*.sqlite3
+log/*.log
+
+# My own files
+aukan/

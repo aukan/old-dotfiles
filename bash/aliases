@@ -1,15 +1,45 @@
-. ~/.zsh/aliases
+# cd
+alias ..='cd ..'
 
-# changing directory to code project
-function c { cd ~/code/$1; }
+# ls
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
-# alternative to "rails" command to use templates
-function railsapp {
-  template=$1
-  appname=$2
-  shift 2
-  rails $appname -m http://github.com/ryanb/rails-templates/raw/master/$template.rb $@
-}
+# git
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+
+# rails
+alias sc='script/console'
+alias ss='script/server'
+alias sg='script/generate'
+alias a='autotest -rails'
+alias tlog='tail -f log/development.log'
+alias scaffold='script/generate nifty_scaffold'
+alias migrate='rake db:migrate db:test:clone'
+alias rst='touch tmp/restart.txt'
+
+# commands starting with % for pasting from web
+alias %=' '
+
+# changing directory to sites
+function sites { cd ~/projects/sites/$1; }
+
+# freshout
+function fresh { cd ~/projects/freshout/$1; }
+function breezi { cd ~/projects/freshout/breezi; }
 
 # misc
 alias reload='. ~/.bash_profile'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
