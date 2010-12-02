@@ -19,3 +19,7 @@ fi
 
 # Load RVM
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+# reload RVM
+cd ..
+cd -
