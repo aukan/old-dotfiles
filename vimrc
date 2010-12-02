@@ -205,6 +205,9 @@ let g:fuf_splitPathMatching=1
 " Shortcut for OpenURL()
 map <Leader>o :call OpenURL()<CR>
 
+" Buffers
+map <Leader>b :b#<Enter>
+
 " Key to go into dvorak mode:
 map <Leader>d :source ~/.dvorak
 " Key to get out of dvorak mode:
