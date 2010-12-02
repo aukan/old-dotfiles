@@ -6,7 +6,7 @@
 tags
 
 # VIM Files
-*.vim
+*.vimsession
 
 Gemfile.lock
 
