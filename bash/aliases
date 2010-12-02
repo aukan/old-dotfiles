@@ -1,5 +1,9 @@
+# edit bash configuration
+alias bashrc='vim ~/.dotfiles/bashrc'
+
 # cd
 alias ..='cd ..'
+alias _='cd -'
 
 # ls
 alias ll='ls -alF'
