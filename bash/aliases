@@ -1,3 +1,6 @@
+# system
+alias install='sudo apt-get install'
+
 # edit bash configuration
 alias bashrc='vim ~/.dotfiles/bashrc'
 
@@ -39,7 +42,7 @@ function sites { cd ~/projects/sites/$1; }
 
 # freshout
 function fresh { cd ~/projects/freshout/$1; }
-function breezi { cd ~/projects/freshout/breezi; }
+function bri { cd ~/projects/freshout/breezi/breeze; }
 
 # misc
 alias reload='. ~/.bash_profile'
