@@ -40,10 +40,6 @@ alias %=' '
 # changing directory to sites
 function sites { cd ~/projects/sites/$1; }
 
-# freshout
-function fresh { cd ~/projects/freshout/$1; }
-function bri { cd ~/projects/freshout/breezi/breeze; }
-
 # misc
 alias reload='. ~/.bash_profile'
 

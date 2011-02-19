@@ -1,7 +1,7 @@
-.DS_Store
 .svn
 *~
-.*.swp
+
+*.swp
 .rvmrc
 tags
 
@@ -16,4 +16,4 @@ db/*.sqlite3
 log/*.log
 
 # My own files
-aukan/
+aukan/*
