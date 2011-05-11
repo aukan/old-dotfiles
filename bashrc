@@ -18,7 +18,7 @@ if [ -f ~/.localrc ]; then
 fi
 
 # Load RVM
-[[ -s "/usr/local/lib/rvm" ]] && . "/usr/local/lib/rvm"
+[[ -s "/usr/local/rvm/scripts/rvm" ]] && . "/usr/local/rvm/scripts/rvm"
 
 # reload RVM
 cd ..
