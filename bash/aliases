@@ -49,3 +49,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # VirtualBox
 alias virtualbox=VBoxManage
+
+# Keychain
+alias keys=load_keys

@@ -1,0 +1,4 @@
+function load_keys(){
+  keychain ~/.ssh/id_rsa;
+  source $HOME/.keychain/$HOSTNAME-sh;
+}
